@@ -4,7 +4,7 @@ import { generateNextHash, generateRandomIntegerNumbers, loadDataFromJson, saveD
 const main = () => {
     let from = config.initFrom;
     let count = config.count;
-    const randNumbers = generateRandomIntegerNumbers(1, 1000000, count);
+    const randNumbers = generateRandomIntegerNumbers(1, 10000000, count);
     let hashes = new Array<{hash: string, nonce: number | undefined}>();
     for (let i = 0; i < randNumbers.length; i++) {
         const nonce = randNumbers[i];
