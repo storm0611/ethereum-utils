@@ -12,12 +12,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^20.12.11",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "ethers": "^6.12.1",
+    "ethers": "^5.7.2",
     "fs": "^0.0.1-security",
     "ts-command-line-args": "^2.5.1",
     "ts-dotenv": "^0.9.1"

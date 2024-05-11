@@ -2,9 +2,10 @@ import config from "./config";
 import { generateNextHash, generateRandomIntegerNumbers, loadDataFromJson, saveDataToJson } from "./utils";
 
 const main = () => {
+    const {min, max} = config;
     let from = config.initFrom;
     let count = config.count;
-    const randNumbers = generateRandomIntegerNumbers(1, 10000000, count);
+    const randNumbers = generateRandomIntegerNumbers(min, max, count);
     let hashes = new Array<{hash: string, nonce: number | undefined}>();
     for (let i = 0; i < randNumbers.length; i++) {
         const nonce = randNumbers[i];
