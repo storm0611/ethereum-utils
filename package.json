@@ -1,0 +1,25 @@
+{
+  "name": "py-ethers-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "ethers": "^6.12.1",
+    "fs": "^0.0.1-security",
+    "ts-command-line-args": "^2.5.1",
+    "ts-dotenv": "^0.9.1"
+  }
+}
