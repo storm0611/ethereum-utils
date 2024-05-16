@@ -29,12 +29,12 @@ const args = parse<IArguments>({
 })
 
 const env = load({
-    RPC_HTTP_URL: String,
-    RPC_WS_URL: String,
+    ETH_RPC_HTTP_URL: String,
+    ETH_RPC_WSS_URL: String,
 })
 
-export const httpProvider = new ethers.providers.JsonRpcProvider(env.RPC_HTTP_URL);
-export const wsProvider = new ethers.providers.WebSocketProvider(env.RPC_WS_URL);
+export const httpProvider = new ethers.providers.JsonRpcProvider(env.ETH_RPC_HTTP_URL);
+export const wsProvider = new ethers.providers.WebSocketProvider(env.ETH_RPC_WSS_URL);
 
 export default {
     initFrom: args.from,
